@@ -29,6 +29,33 @@ PSEUDOCODE
 name: calculateAverages
 input: arrOfNums
 output: averages, an object with two numbers 
+*/
+
+/*
+Function body
+
+Function calculateAverages (arrOfNums)  
+Declare positiveArray = []
+Declare negativeArray = []
+Set positiveArray = arrOfNums filtered for positive numbers (by calling isPositive)
+Set negativeArray = arrOfNums filtered for negative numbers (by calling isNegative)
+Create empty object -> posAndNegAverages
+posAndNegAverages set key averageOfPositives to the return of getAverage (positiveArray) or null
+posAndNegAverages set key averageOfNegatives to the return of getAverage (negativeArray) or null
+return posAndNegAverages
+
+Function getAverage (arr) 
+Declare sum = arr reduced to sum of all numbers inside
+Declare average = sum divided by the length of the array
+Return average
+
+Function isPositive (num)
+ Return num > 0
+
+ Function isNegative (num)
+ Return num < 0
+
+
 
 */
 
