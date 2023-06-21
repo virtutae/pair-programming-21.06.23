@@ -36,6 +36,7 @@ output: averages, an object with two numbers
 
 
 function calculateAverages(){
-
+ return 0;
 }
 
+module.exports = calculateAverages
